@@ -101,20 +101,37 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"
+
                 android:id="@+id/textContact" />
+
+            <ImageButton
+                android:id="@+id/imageContact"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:maxHeight="15dp"
+                android:maxWidth="15dp"
+                android:layout_alignTop="@+id/textContact"
+                android:src="@drawable/contact" />
 
             <EditText
                 android:id="@+id/editName"
-                android:layout_width="wrap_content"
+                android:layout_width="308dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
                 android:layout_below="@+id/textContact"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/imageContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords">
+                android:inputType="textCapWords"
+                android:maxWidth="20dp">
 
                 <requestFocus />
             </EditText>

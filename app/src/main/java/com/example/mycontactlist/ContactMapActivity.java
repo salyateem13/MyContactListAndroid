@@ -266,6 +266,8 @@ public class ContactMapActivity extends AppCompatActivity   {
         }
         return isBetter;
     }
+
+
     private SensorEventListener mySensorEventListener = new SensorEventListener() {
 
         public void onAccuracyChanged(Sensor sensor, int accuracy) {  }
