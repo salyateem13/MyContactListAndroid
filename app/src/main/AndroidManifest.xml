@@ -49,7 +49,7 @@
         <!-- this is debug key -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="your key goes here" />
+            android:value="AIzaSyAi7t1zLqkowqbSQqAgloxgkJz5-lL5OyI" />
 
     </application>
 

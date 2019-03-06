@@ -9,14 +9,19 @@
     <list default="true" id="4e26cb14-8265-4b9c-8dbe-c75565003eeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml" afterDir="false" />
     </list>
@@ -45,6 +50,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="MyContactList" type="f1a62948:ProjectNode" />
+                <item name="MyContactList" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyContactList" type="f1a62948:ProjectNode" />
+                <item name="MyContactList" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyContactList" type="f1a62948:ProjectNode" />
                 <item name=":app" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -52,13 +68,6 @@
                 <item name="MyContactList" type="f1a62948:ProjectNode" />
                 <item name=":app" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MyContactList" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="android" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -71,12 +80,12 @@
     <session id="-1379282042">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,9 +93,9 @@
           <entry key="aidl" value="1" />
           <entry key="class" value="2" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="68" />
+          <entry key="java" value="70" />
           <entry key="png" value="15" />
-          <entry key="xml" value="58" />
+          <entry key="xml" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -95,25 +104,25 @@
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="2" />
           <entry key="Image" value="15" />
-          <entry key="JAVA" value="68" />
-          <entry key="XML" value="58" />
+          <entry key="JAVA" value="70" />
+          <entry key="XML" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="6984" />
+          <entry key="java" value="7119" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="1237" />
+          <entry key="xml" value="1239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="6984" />
+          <entry key="JAVA" value="7119" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="XML" value="1237" />
+          <entry key="XML" value="1239" />
         </counts>
       </usages-collector>
     </session>
@@ -123,53 +132,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="162" column="52" selection-start-line="162" selection-start-column="52" selection-end-line="163" />
+            <state relative-caret-position="831">
+              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onPause#0;class#ContactMapActivity#0" />
+                <element signature="method#onStart#0;class#ContactMapActivity#0" />
+                <element signature="method#onStop#0;class#ContactMapActivity#0" />
+                <element signature="method#createLocationRequest#0;class#ContactMapActivity#0" />
+                <element signature="method#onConnected#0;class#ContactMapActivity#0" />
+                <element signature="method#onConnectionSuspended#0;class#ContactMapActivity#0" />
+                <element signature="method#onConnectionFailed#0;class#ContactMapActivity#0" />
+                <element signature="method#onMapReady#0;class#ContactMapActivity#0" />
+                <element signature="method#onLocationChanged#0;class#ContactMapActivity#0" />
                 <element signature="method#startLocationUpdates#0;class#ContactMapActivity#0" />
                 <element signature="method#onRequestPermissionsResult#0;class#ContactMapActivity#0" />
                 <element signature="method#initListButton#0;class#ContactMapActivity#0" />
                 <element signature="method#initSettingsButton#0;class#ContactMapActivity#0" />
-                <element signature="method#initGetLocationButton#0;class#ContactMapActivity#0" />
-                <element signature="method#isBetterLocation#0;class#ContactMapActivity#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_list.xml">
-          <provider editor-type-id="android-designer2" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="49" selection-start-line="49" selection-end-line="97" selection-end-column="21" />
+            <state relative-caret-position="765">
+              <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_list.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_settings.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="675">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -215,8 +239,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactDBHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactDataSource.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java" />
       </list>
@@ -233,25 +257,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyContactList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyContactList" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="MyContactList" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="MyContactList" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="MyContactList" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mycontactlist" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="MyContactList" type="1abcf292:AndroidViewProjectNode" />
@@ -268,6 +290,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyContactList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyContactList" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,7 +341,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle./Users/samiralyateem/AndroidStudioProjects/MyContactList/app [signingReport]">
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="All in app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -387,9 +431,11 @@
     <list>
       <item itemvalue="Android App.app" />
       <item itemvalue="Gradle./Users/samiralyateem/AndroidStudioProjects/MyContactList/app [signingReport]" />
+      <item itemvalue="Android JUnit.All in app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.All in app" />
         <item itemvalue="Gradle./Users/samiralyateem/AndroidStudioProjects/MyContactList/app [signingReport]" />
       </list>
     </recent_temporary>
@@ -407,6 +453,11 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_app - 2019.03.06 at 12h 26m 46s.xml">
+      <configuration name="All in app" configurationId="AndroidJUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -417,11 +468,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2738" y="0" width="1960" height="1440" extended-state="0" />
+    <frame x="853" y="0" width="1707" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50301206" side_tool="true" weight="0.19222689" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49698794" visible="true" weight="0.124087594" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49698794" visible="true" weight="0.12372372" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.32967034" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32967034" />
       <window_info id="Build Variants" order="4" side_tool="true" weight="0.32967034" />
@@ -433,14 +484,14 @@
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.31210855" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.6078078" weight="0.32937685" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.3274244" side_tool="true" visible="true" weight="0.2069733" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.6725756" visible="true" weight="0.2069733" />
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" sideWeight="0.4990991" weight="0.32937685" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49530762" weight="0.32937685" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="5" sideWeight="0.5063063" side_tool="true" visible="true" weight="0.32937685" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.6708709" weight="0.2069733" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.4990991" weight="0.32937685" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49369368" weight="0.32937685" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.4993895" weight="0.39248434" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.15172054" />
+      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.17477478" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
@@ -639,24 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="e#1336#1375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
@@ -672,46 +705,70 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="162" column="52" selection-start-line="162" selection-start-column="52" selection-end-line="163" />
+        <state relative-caret-position="433">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onPause#0;class#ContactMapActivity#0" />
-            <element signature="method#startLocationUpdates#0;class#ContactMapActivity#0" />
-            <element signature="method#onRequestPermissionsResult#0;class#ContactMapActivity#0" />
-            <element signature="method#initListButton#0;class#ContactMapActivity#0" />
-            <element signature="method#initSettingsButton#0;class#ContactMapActivity#0" />
-            <element signature="method#initGetLocationButton#0;class#ContactMapActivity#0" />
-            <element signature="method#isBetterLocation#0;class#ContactMapActivity#0" />
+            <element signature="e#2698#3317#0" expanded="true" />
+            <element signature="e#3316#3317#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_settings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="765">
+          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="49" selection-start-line="49" selection-end-line="97" selection-end-column="21" />
+        <state relative-caret-position="630">
+          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_map.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mycontactlist/ContactMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onStart#0;class#ContactMapActivity#0" />
+            <element signature="method#onStop#0;class#ContactMapActivity#0" />
+            <element signature="method#createLocationRequest#0;class#ContactMapActivity#0" />
+            <element signature="method#onConnected#0;class#ContactMapActivity#0" />
+            <element signature="method#onConnectionSuspended#0;class#ContactMapActivity#0" />
+            <element signature="method#onConnectionFailed#0;class#ContactMapActivity#0" />
+            <element signature="method#onMapReady#0;class#ContactMapActivity#0" />
+            <element signature="method#onLocationChanged#0;class#ContactMapActivity#0" />
+            <element signature="method#startLocationUpdates#0;class#ContactMapActivity#0" />
+            <element signature="method#onRequestPermissionsResult#0;class#ContactMapActivity#0" />
+            <element signature="method#initListButton#0;class#ContactMapActivity#0" />
+            <element signature="method#initSettingsButton#0;class#ContactMapActivity#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
