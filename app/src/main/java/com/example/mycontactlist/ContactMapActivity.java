@@ -8,11 +8,11 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.LocationListener;
+
 import android.location.LocationManager;
 import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -24,26 +24,37 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import android.location.Location;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.location.LocationListener;
 
 
 
-public class ContactMapActivity extends AppCompatActivity   {
 
-    LocationManager locationManager;
-    LocationListener gpsListener;
-    LocationListener networkListener;
-    Location currentBestLocation;
+public class ContactMapActivity extends AppCompatActivity  implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks, LocationListener  {
+
+    final int PERMISSION_REQUEST_LOCATION = 101;
+    GoogleMap gMap;
+    GoogleApiClient mGoogleApiClient;
+    LocationRequest mLocationRequest;
+    ArrayList<Contact> contacts = new ArrayList<>();
+    Contact currentContact = null;
 
     SensorManager sensorManager;
     Sensor accelerometer;
     Sensor magnetometer;
     TextView textDirection;
 
-    final int PERMISSION_REQUEST_LOCATION = 101;
 
 
     @Override
@@ -51,11 +62,38 @@ public class ContactMapActivity extends AppCompatActivity   {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_map);
 
+        Bundle extras = getIntent().getExtras();
+        try {
+            ContactDataSource ds = new ContactDataSource(ContactMapActivity.this);
+            ds.open();
+            if (extras != null) {
+                currentContact = ds.getSpecificContact(extras.getInt("contactid"));
+            } else {
+                contacts = ds.getContacts("contactname", "ASC");
+            }
+            ds.close();
+        }
+        catch (Exception e) {
+            Toast.makeText(this, "Contact(s) could not be retrieved.", Toast.LENGTH_LONG).show();
+        }
+
         initListButton();
         initMapButton();
         initSettingsButton();
-        initGetLocationButton();
+        initMapTypeButton();
 
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+        createLocationRequest();
+
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -70,6 +108,99 @@ public class ContactMapActivity extends AppCompatActivity   {
         textDirection = (TextView) findViewById(R.id.textHeading);
 
     }
+
+    protected void onStart() {
+        mGoogleApiClient.connect();
+        super.onStart();
+    }
+
+    protected void onStop() {
+        mGoogleApiClient.disconnect();
+        super.onStop();
+    }
+
+    protected void createLocationRequest() {
+        mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(10000);
+        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+
+
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+        if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission(getBaseContext(),
+                android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission( getBaseContext(),
+                        android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return  ;
+        }
+        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        Toast.makeText(getBaseContext(), "Lat: "+location.getLatitude()+ " Long: "+location.getLongitude()+" Accuracy:  "+ location.getAccuracy(), Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
+    }
+
+    private SensorEventListener mySensorEventListener = new SensorEventListener() {
+
+        public void onAccuracyChanged(Sensor sensor, int accuracy) {  }
+
+        float[] accelerometerValues;
+        float[] magneticValues;
+
+        public void onSensorChanged(SensorEvent event) {
+            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
+                accelerometerValues = event.values;
+            if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD)
+                magneticValues = event.values;
+            if (accelerometerValues!= null && magneticValues!= null) {
+                float R[] = new float[9];
+                float I[] = new float[9];
+                boolean success = SensorManager.getRotationMatrix(R, I, accelerometerValues, magneticValues);
+                if (success) {
+                    float orientation[] = new float[3];
+                    SensorManager.getOrientation(R, orientation);
+
+                    float azimut = (float) Math.toDegrees(orientation[0]);
+                    if (azimut < 0.0f) { azimut+=360.0f;}
+                    String direction;
+                    if (azimut >= 315 || azimut < 45) { direction = "N"; }
+                    else if (azimut >= 225 && azimut < 315) { direction = "W"; }
+                    else if (azimut >= 135 && azimut < 225) { direction = "S"; }
+                    else { direction = "E"; }
+                    textDirection.setText(direction);
+                }
+            }
+        }
+    };
 
     @Override
     public void onPause() {
@@ -302,5 +433,9 @@ public class ContactMapActivity extends AppCompatActivity   {
     };
 
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+    }
 }
 
